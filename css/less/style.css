@@ -13441,6 +13441,9 @@ table {
   font-size: 12px;
   width: 100%;
 }
+table thead tr:first-child {
+  border-top: none;
+}
 table tr {
   border-top: 1px solid #dedfe1;
 }
