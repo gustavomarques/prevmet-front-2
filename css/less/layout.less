@@ -1226,6 +1226,7 @@ table{
 // ----------------------------------------------//
 
 #acerto{
+	padding-bottom: 50px;
 	.acertos-do-dia{
 		padding-bottom: 50px;
 
@@ -1550,6 +1551,44 @@ table{
 		}
 	}
 }
+
+#pesquisarEstacoes{
+	position: fixed;
+	padding: 20px 30px;
+	background: @azul;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	h1{
+		font-size: 24px;
+		line-height: 30px;
+		font-weight: 200;
+		color: @branco;
+		margin: 0;
+	}
+
+	.form-group{
+		margin-bottom: 0;
+
+		input[type="text"], select{
+			background: rgba(0,0,0,0.2);
+			color: @branco;
+			border-color: rgba(0,0,0,0.1);
+		}
+	}
+
+	label{
+		color: rgba(0,0,0,0.5);
+		margin-bottom: 5px;
+	}
+
+	input[type="submit"], button{
+		width: 100%;
+	}
+}
+
+
 
 // ----------------------------------------------//
 //---------------   Relatorios    ---------------//

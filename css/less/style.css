@@ -14635,6 +14635,9 @@ table td.icon a:hover {
   color: #263340;
   font-size: 30px;
 }
+#acerto {
+  padding-bottom: 50px;
+}
 #acerto .acertos-do-dia {
   padding-bottom: 50px;
 }
@@ -15005,6 +15008,38 @@ table td.icon a:hover {
 }
 #acerto .box.publicado .status {
   color: #4181ff;
+}
+#pesquisarEstacoes {
+  position: fixed;
+  padding: 20px 30px;
+  background: #4181ff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#pesquisarEstacoes h1 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 200;
+  color: #ffffff;
+  margin: 0;
+}
+#pesquisarEstacoes .form-group {
+  margin-bottom: 0;
+}
+#pesquisarEstacoes .form-group input[type="text"],
+#pesquisarEstacoes .form-group select {
+  background: rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+#pesquisarEstacoes label {
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 5px;
+}
+#pesquisarEstacoes input[type="submit"],
+#pesquisarEstacoes button {
+  width: 100%;
 }
 #relatorio .box {
   -webkit-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05);
