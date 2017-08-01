@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "prevmet";
+  src:url("fonts/prevmet.eot");
+  src:url("fonts/prevmet.eot?#iefix") format("embedded-opentype"),
+    url("fonts/prevmet.woff") format("woff"),
+    url("fonts/prevmet.ttf") format("truetype"),
+    url("fonts/prevmet.svg#prevmet") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "prevmet" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "prevmet" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-config:before {
+  content: "\61";
+}
+.icon-close:before {
+  content: "\62";
+}
+.icon-edit:before {
+  content: "\63";
+}
+.icon-message:before {
+  content: "\64";
+}
+.icon-notification:before {
+  content: "\65";
+}
+.icon-search:before {
+  content: "\66";
+}
+.icon-send:before {
+  content: "\68";
+}
+.icon-user:before {
+  content: "\69";
+}
+.icon-help:before {
+  content: "\67";
+}
+.icon-view:before {
+  content: "\6a";
+}
+.icon-calendar:before {
+  content: "\6b";
+}
+.icon-angle-down:before {
+  content: "\6c";
+}
+.icon-check:before {
+  content: "\6d";
+}

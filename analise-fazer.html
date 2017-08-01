@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+
+
+	<title>Prevmet</title>
+
+	<!-- Loading Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/font-awesome.css" rel="stylesheet">
+
+	<!-- Loading Css -->
+	<link href="css/less/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<section id="menu">
+	<nav id="menu-left">
+		<a href="index.html" class="logo">.</a>
+		<a href="previsao-fazer.html">Previsões</a>
+		<a href="analise-antiga.html" class="active">Análise sinótica</a>
+		<a href="acerto-fazer.html">Acerto</a>
+		<a href="relatorio.html">Relatórios</a>
+	</nav>
+
+
+	<div id="menu-right">
+		<nav>
+			<a href="notificacao.html" class="icon notificacao-icon"><span>2</span>e</a>
+			<a href="mural.html" class="icon">d</a>
+			<a href="ajuda.html" class="icon">g</a>
+			<a href="config.html" class="icon">a</a>
+		</nav>
+		<section id="user-options">
+			<img src="img/avatar.png">
+			<span>Gustavo Marques</span>
+			<button type="button" data-toggle="collapse" data-target="#user-options nav">l</button>
+			
+			<nav>
+				<a href="alterar-senha.html">Alterar senha</a>
+				<a href="alterar-fhoto.html">Alterar foto</a>
+				<a href="login.html">Sair do sistema</a>
+			</nav>
+		</section>
+	</div>
+
+</section>
+
+<section id="analise" class="wrapper">
+
+	<header>
+		<h1 class="title"><b>Nova análise sinótica</b></h1>
+
+		<nav>
+			<a href="analise-antiga.html">Pesquisar análises</a>
+		</nav>
+	</header>
+
+	<div class="box">
+		
+		<div class="analiseAnterior">
+			<div>
+				<h1>Análise anterior</h1>
+				<p>Na análise da carta sinótica de superfície das 12Z do dia 25/06, observa-se a presença de uma frente estacionária entre o leste da Argentina e Atlântico adjacente e o ramo frio segue pelo Oceano Atlântico Sul até um ciclone de 964 hPa, centrado em 60°S/16°W. Outro sistema frontal transiente é obervado no Oceano Pacífico, próximo ao Chile, associado a um ciclone extratropical no valor de 996 hPa em torno de 34°S/78°W. A Alta Subtropical do Atlântico Sul (ASAS) tem valor de 1032 hPa em torno de 33°S/23°W, ao sul de sua posição climatológica. A Alta Subtropical do Pacífico Sul (ASPS) encontra-se com núcleo de 1028 hPa, fora do domínio desta figura. A Zona de Convergência Intertropical (ZCIT) atua em torno de 07°N/09°N no Oceano Pacífico e 06°N/08°N no Oceano Atlântico. </p>
+			</div>
+		</div>
+
+		<header>
+			<button type="button" class="btn btn-default verAnalisesAnteriores">Ver análise anterior</button>
+
+			<div class="form-group col-md-3">
+				<label>Data</label>
+				<input type="text" name="" class="form-control">
+			</div>
+
+			<div class="form-group col-md-3">
+				<label>Rodada</label>
+				<select class="form-control">
+					<option value="0">Todos</option>
+					<option value="1">00 UTC</option>
+					<option value="2">06 UTC</option>
+					<option value="3">12 UTC</option>
+					<option value="3">18 UTC</option>
+					<option value="3">24 UTC</option>
+				</select>
+			</div>
+		</header>
+
+		<div class="form-group col-md-12">
+			<label>Descrição</label>
+			<textarea class="form-control" type="textarea" maxlength="200" rows="10"></textarea>
+		</div>
+
+		<div class="form-group modificacao col-md-12">
+			<label>Última modificação</label>
+			<p>Esta previsão ainda não teve nenhuma ação por parte de nenhum usuário</p>
+		</div>
+		
+		<div class="form-group col-md-3">
+			<label>Digitador responsável</label>
+			<select class="form-control">
+				<option value="0">Todos</option>
+				<option value="1">00 UTC</option>
+				<option value="2">06 UTC</option>
+				<option value="3">12 UTC</option>
+				<option value="3">18 UTC</option>
+				<option value="3">24 UTC</option>
+			</select>
+		</div>
+		<div class="form-group col-md-3">
+			<label>Responsável pela análise</label>
+			<select class="form-control">
+				<option value="0">Todos</option>
+				<option value="1">00 UTC</option>
+				<option value="2">06 UTC</option>
+				<option value="3">12 UTC</option>
+				<option value="3">18 UTC</option>
+				<option value="3">24 UTC</option>
+			</select>
+		</div>
+		<div class="form-group col-md-3">
+			<label>Status da analise</label>
+			<select class="form-control">
+				<option value="0">Todos</option>
+				<option value="1">00 UTC</option>
+				<option value="2">06 UTC</option>
+				<option value="3">12 UTC</option>
+				<option value="3">18 UTC</option>
+				<option value="3">24 UTC</option>
+			</select>
+		</div>
+		<div class="form-group col-md-3">
+			<label></label>
+			<button type="button" class="btn btn-primary">Salvar análise</button>
+		</div>
+
+	</div>
+
+	<div class="box cartaSinotica">
+		<header class="col-md-12">
+			<h1>Cartas sinóticas</h1>
+			<a href="#" class="btn btn-default">Ver imagens de satélite</a>
+		</header>
+
+		<table class="cartas">
+			<tr>
+				<td>
+					<img src="img/cartasinotica.png">
+				</td>
+				<td>
+					<img src="img/cartasinotica.png">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="img/cartasinotica.png">
+				</td>
+				<td>
+					Carta ainda não disponível
+				</td>
+			</tr>
+		</table>
+
+	</div>
+
+</section>
+
+<!-- Js -->
+<script src="js/jquery.min.js"></script>
+<script src="js/flat-ui-pro.min.js"></script>
+<script src="js/radiocheck.js"></script>
+<script src="js/fileinput.js"></script>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/prevmet.js"></script>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+</body>
+
+</html>

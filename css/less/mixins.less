@@ -1,0 +1,134 @@
+// Mixins
+// --------------------------------------------------
+
+// Utilities
+@import "mixins/hide-text.less";
+@import "mixins/opacity.less";
+@import "mixins/image.less";
+@import "mixins/labels.less";
+@import "mixins/reset-filter.less";
+@import "mixins/resize.less";
+@import "mixins/responsive-visibility.less";
+@import "mixins/size.less";
+@import "mixins/tab-focus.less";
+@import "mixins/text-emphasis.less";
+@import "mixins/text-overflow.less";
+@import "mixins/vendor-prefixes.less";
+@import "mixins/background-clip.less";
+
+// Components
+@import "mixins/alerts.less";
+@import "mixins/buttons.less";
+@import "mixins/select.less";
+@import "mixins/panels.less";
+@import "mixins/pagination.less";
+@import "mixins/nav-divider.less";
+@import "mixins/forms.less";
+@import "mixins/table-row.less";
+@import "mixins/spinners.less";
+@import "mixins/switches.less";
+@import "mixins/iconbars.less";
+@import "mixins/dialogs.less";
+
+// Skins
+@import "mixins/background-variant.less";
+@import "mixins/border-radius.less";
+@import "mixins/gradients.less";
+
+// Layout
+@import "mixins/clearfix.less";
+@import "mixins/center-block.less";
+@import "mixins/navbar-vertical-align.less";
+@import "mixins/grid.less";
+
+
+.transition(@t:all){
+	transition-property: @t;
+	transition-duration: .3s;
+}
+
+
+.bgCover{	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.translateY(@t){
+	-ms-transform: translateY(@t); /* IE 9 */
+	-webkit-transform: translateY(@t); /* Safari */
+	transform: translateY(@t);
+}
+
+.translateX(@t){
+	-ms-transform: translateX(@t); /* IE 9 */
+	-webkit-transform: translateX(@t); /* Safari */
+	transform: translateX(@t);
+}
+
+.box-sizing (@t: border-box) {
+	-webkit-box-sizing: @t;
+	-moz-box-sizing:    @t;
+	box-sizing:         @t;
+}
+
+.drop-shadow (@x: 0, @y: 5px, @blur: 5px, @spread: 0, @alpha: 0.05) {
+	-webkit-box-shadow:	@x @y @blur @spread rgba(0, 0, 0, @alpha);
+	-moz-box-shadow:	@x @y @blur @spread rgba(0, 0, 0, @alpha);
+	box-shadow:		@x @y @blur @spread rgba(0, 0, 0, @alpha);
+}
+
+.appearanceNone {
+   -webkit-appearance: none;
+   -moz-appearance:    none;
+   appearance:         none;
+	background: none;
+	border: 0;
+	border: 0;
+	color: inherit;
+	/* cursor: default; */
+	font: inherit;
+	line-height: normal;
+	overflow: visible;
+	padding: 0;
+	-webkit-user-select: none; /* for button */
+	-moz-user-select: none;
+	-ms-user-select: none;  
+}
+
+.border-radius (@radius: 10px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius:    @radius;
+	border-radius:         @radius;
+
+	-moz-background-clip:    padding;
+	-webkit-background-clip: padding-box;
+	background-clip:         padding-box;
+}
+
+.centralizado{
+	top: 50%;
+	.translateY(-50%);
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+.box-style{
+	.drop-shadow;
+	background: @branco;
+	.clearfix;
+	position: relative;
+	.border-radius(10px);
+	margin: 20px 0 20px 0;
+}

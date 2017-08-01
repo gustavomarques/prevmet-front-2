@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+
+
+	<title>Prevmet</title>
+
+	<!-- Loading Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/font-awesome.css" rel="stylesheet">
+
+	<!-- Loading Css -->
+	<link href="css/less/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<section id="menu">
+	<nav id="menu-left">
+		<a href="index.html" class="logo">.</a>
+		<a href="previsao-fazer.html">Previsões</a>
+		<a href="analise-antiga.html">Análise sinótica</a>
+		<a href="acerto-fazer.html">Acerto</a>
+		<a href="relatorio.html" class="active">Relatórios</a>
+	</nav>
+
+
+	<div id="menu-right">
+		<nav>
+			<a href="notificacao.html" class="icon notificacao-icon"><span>2</span>e</a>
+			<a href="mural.html" class="icon">d</a>
+			<a href="ajuda.html" class="icon">g</a>
+			<a href="config.html" class="icon">a</a>
+		</nav>
+		<section id="user-options">
+			<img src="img/avatar.png">
+			<span>Gustavo Marques</span>
+			<button type="button" data-toggle="collapse" data-target="#user-options nav">l</button>
+			
+			<nav>
+				<a href="alterar-senha.html">Alterar senha</a>
+				<a href="alterar-fhoto.html">Alterar foto</a>
+				<a href="login.html">Sair do sistema</a>
+			</nav>
+		</section>
+	</div>
+
+</section>
+
+<section id="relatorio" class="wrapper">
+
+	<header>
+		<h1 class="title"><b>Relatórios</b></h1>
+	</header>
+
+	<div class="box">
+		<header>
+			<div class="form-group col-md-6">
+				<label>Selecione qual relatório deseja exportar</label>
+				<select class="form-control">
+					<option value="0">Chuva</option>
+					<option value="1">Sol</option>
+					<option value="2">Nublado</option>
+					<option value="3">Poucas nuvens</option>
+				</select>
+			</div>
+		</header>
+
+		<div class="content">
+			<div class="form-group col-md-3">
+				<label>Data Início</label>
+				<input type="text" name="">
+			</div>
+
+			<div class="form-group col-md-3">
+				<label>Data Fim</label>
+				<input type="text" name="">
+			</div>
+
+			<div class="form-group col-md-6">
+				<label>Tipo</label>
+				<select class="form-control">
+					<option value="0">Chuva</option>
+					<option value="1">Sol</option>
+					<option value="2">Nublado</option>
+					<option value="3">Poucas nuvens</option>
+				</select>
+			</div>
+
+			<div class="form-group col-md-12">
+				<div class="form-check form-check-inline">
+					<label class="form-check-label">
+					<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> Todos
+					</label>
+				</div>
+
+				<div class="form-check form-check-inline">
+					<label class="form-check-label">
+					<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2"> Norte
+					</label>
+				</div>
+
+				<div class="form-check form-check-inline">
+					<label class="form-check-label">
+					<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3"> Nordeste
+					</label>
+				</div>
+
+				<div class="form-check form-check-inline">
+					<label class="form-check-label">
+					<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2"> Centro-Oeste
+					</label>
+				</div>
+
+				<div class="form-check form-check-inline">
+					<label class="form-check-label">
+					<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3"> Sul
+					</label>
+				</div>
+
+				<div class="form-check form-check-inline">
+					<label class="form-check-label">
+					<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3"> Sudeste
+					</label>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<footer>
+		<button type="button" class="btn btn-primary">Exportar relatório</button>
+	</footer>
+
+
+</section>
+
+<!-- Js -->
+<script src="js/jquery.min.js"></script>
+<script src="js/flat-ui-pro.min.js"></script>
+<script src="js/radiocheck.js"></script>
+<script src="js/fileinput.js"></script>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/prevmet.js"></script>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+</body>
+
+</html>

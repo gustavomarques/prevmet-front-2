@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+
+
+	<title>Prevmet</title>
+
+	<!-- Loading Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/font-awesome.css" rel="stylesheet">
+
+	<!-- Loading Css -->
+	<link href="css/less/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<section id="menu">
+	<nav id="menu-left">
+		<a href="index.html" class="logo">.</a>
+		<a href="previsao-fazer.html">Previsões</a>
+		<a href="analise-antiga.html">Análise sinótica</a>
+		<a href="acerto-fazer.html" class="active">Acerto</a>
+		<a href="relatorio.html">Relatórios</a>
+	</nav>
+
+
+	<div id="menu-right">
+		<nav>
+			<a href="notificacao.html" class="icon notificacao-icon"><span>2</span>e</a>
+			<a href="mural.html" class="icon">d</a>
+			<a href="ajuda.html" class="icon">g</a>
+			<a href="config.html" class="icon">a</a>
+		</nav>
+		<section id="user-options">
+			<img src="img/avatar.png">
+			<span>Gustavo Marques</span>
+			<button type="button" data-toggle="collapse" data-target="#user-options nav">l</button>
+			
+			<nav>
+				<a href="alterar-senha.html">Alterar senha</a>
+				<a href="alterar-fhoto.html">Alterar foto</a>
+				<a href="login.html">Sair do sistema</a>
+			</nav>
+		</section>
+	</div>
+
+</section>
+
+<section id="acerto" class="wrapper">
+
+	<header>
+		<h1 class="title">Olá, <b>Gustavo Marques</b>, seu DISME tem 20 acertos previsões para serem realizadas.</h1>
+
+		<nav>
+			<a href="#">Ver acertos antigos</a>
+		</nav>
+	</header>
+
+
+	<section class="acertos-do-dia">
+		<h1>27 de Maio de 2017</h1>
+		
+		<div class="box pendente">
+			<header>
+				<h1>Norte</h1>
+				<span class="status">Acerto pendente</span>
+				<button type="button" class="btn btn-primary fazerAcerto">Fazer acerto</button>
+				<div class="resumo">
+					<a href="ajuda-preencher_acerto.html">Documentação de valores para acerto.</a>
+					<span>
+						Média qualidade
+						<b>75%</b>
+					</span>
+					<span>
+						Média acerto
+						<b>-</b>
+					</span>
+				</div>
+			</header>
+
+			<div class="content">
+				<table>
+					<thead>
+						<tr>
+							<td></td>
+							<td colspan="7">Condição do tempo</td>
+							<td class="acerto-label">%</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="previsto">
+							<td>Previsto</td>
+							<td colspan="7">Claro a parcialmente nublado passando a nublado com possibilidade de pancadas de chuva e trovoadas isoladas</td>
+							<td rowspan="2" class="acerto-porcentagem">
+								<input type="text">
+							</td>
+						</tr>
+						<tr class="observado">
+							<td>Observado</td>
+							<td colspan="7">
+								<select class="form-control">
+									<option value="0">Chuva</option>
+									<option value="1">Sol</option>
+									<option value="2">Nublado</option>
+									<option value="3">Poucas nuvens</option>
+								</select>
+							</td>
+						</tr>
+					</tbody>
+					
+					<thead>
+						<tr>
+							<td></td>
+							<td class="temp">Temp. Mín.</td>
+							<td class="acerto-label">%</td>
+							<td class="temp">Temp. Máx.</td>
+							<td class="acerto-label">%</td>
+							<td class="temp">Umid. Mín.</td>
+							<td class="acerto-label">%</td>
+							<td class="temp">Umid. Máx.</td>
+							<td class="acerto-label">%</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="previsto">
+							<td>Previsto</td>
+							<td class="temp">12º</td>
+							<td rowspan="2" class="acerto-porcentagem">
+								<input type="text">
+							</td>
+							<td class="temp">23º</td>
+							<td rowspan="2" class="acerto-porcentagem">
+								<input type="text">
+							</td>
+							<td class="temp">40%</td>
+							<td rowspan="2" class="acerto-porcentagem">
+								<input type="text">
+							</td>
+							<td class="temp">80%</td>
+							<td rowspan="2" class="acerto-porcentagem">
+								<input type="text">
+							</td>
+						</tr>
+						<tr class="observado">
+							<td>observado</td>
+							<td class="temp"><input type="text"></td>
+							<td class="temp"><input type="text"></td>
+							<td class="temp"><input type="text"></td>
+							<td class="temp"><input type="text"></td>
+						</tr>
+					</tbody>
+
+					<thead>
+						<tr>
+							<td></td>
+							<td colspan="3">Intensidade do vento</td>
+							<td class="acerto-label">%</td>
+							<td colspan="3">Direção do vento</td>
+							<td class="acerto-label">%</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="previsto">
+							<td>Previsto</td>
+							<td colspan="3">Fracos a moderados</td>
+							<td rowspan="2" class="acerto-porcentagem">
+								<input type="text">
+							</td>
+							<td colspan="3">NS - NW - S</td>
+							<td rowspan="2" class="acerto-porcentagem">
+								<input type="text">
+							</td>
+						</tr>
+						<tr class="observado">
+							<td>observado</td>
+							<td colspan="3">
+								<select class="form-control">
+									<option value="0">Chuva</option>
+									<option value="1">Sol</option>
+									<option value="2">Nublado</option>
+									<option value="3">Poucas nuvens</option>
+								</select>
+							</td>
+							<td colspan="3">
+								<input type="checkbox" value="NW">
+								<input type="checkbox" value="N">
+								<input type="checkbox" value="NE">
+								<input type="checkbox" value="E">
+								<input type="checkbox" value="SE">
+								<input type="checkbox" value="S">
+								<input type="checkbox" value="SW">
+								<input type="checkbox" value="W">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<footer>
+					<h1>Porcentagem total deste acerto <b>85%</b></h1>
+					<button type="button" class="btn btn-primary salvarAcerto">Salvar previsão</button>
+				</footer>
+
+
+			</div>
+		</div>
+		
+		<div class="box publicado">
+			<header>
+				<h1>Norte</h1>
+				<span class="status">Acerto publicado</span>
+				<button type="button" class="btn btn-primary fazerAcerto">Editar acerto</button>
+				<div class="resumo">
+					<a href="ajuda-preencher_acerto.html">Documentação de valores para acerto.</a>
+					<span>
+						Média qualidade
+						<b>75%</b>
+					</span>
+					<span>
+						Média acerto
+						<b>-</b>
+					</span>
+				</div>
+			</header>
+
+			<div class="content">
+				<table>
+					<thead>
+						<tr>
+							<td></td>
+							<td colspan="7">Condição do tempo</td>
+							<td class="acerto-label">%</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="previsto">
+							<td>Previsto</td>
+							<td colspan="7">Claro a parcialmente nublado passando a nublado com possibilidade de pancadas de chuva e trovoadas isoladas</td>
+							<td rowspan="2" class="acerto-porcentagem">
+								<input type="text">
+							</td>
+						</tr>
+						<tr class="observado">
+							<td>Observado</td>
+							<td colspan="7">
+								<select class="form-control">
+									<option value="0">Chuva</option>
+									<option value="1">Sol</option>
+									<option value="2">Nublado</option>
+									<option value="3">Poucas nuvens</option>
+								</select>
+							</td>
+						</tr>
+					</tbody>
+					
+					<thead>
+						<tr>
+							<td></td>
+							<td class="temp">Temp. Mín.</td>
+							<td class="acerto-label">%</td>
+							<td class="temp">Temp. Máx.</td>
+							<td class="acerto-label">%</td>
+							<td class="temp">Umid. Mín.</td>
+							<td class="acerto-label">%</td>
+							<td class="temp">Umid. Máx.</td>
+							<td class="acerto-label">%</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="previsto">
+							<td>Previsto</td>
+							<td class="temp">12º</td>
+							<td rowspan="2" class="acerto-porcentagem">
+								<input type="text">
+							</td>
+							<td class="temp">23º</td>
+							<td rowspan="2" class="acerto-porcentagem">
+								<input type="text">
+							</td>
+							<td class="temp">40%</td>
+							<td rowspan="2" class="acerto-porcentagem">
+								<input type="text">
+							</td>
+							<td class="temp">80%</td>
+							<td rowspan="2" class="acerto-porcentagem">
+								<input type="text">
+							</td>
+						</tr>
+						<tr class="observado">
+							<td>observado</td>
+							<td class="temp"><input type="text"></td>
+							<td class="temp"><input type="text"></td>
+							<td class="temp"><input type="text"></td>
+							<td class="temp"><input type="text"></td>
+						</tr>
+					</tbody>
+
+					<thead>
+						<tr>
+							<td></td>
+							<td colspan="3">Intensidade do vento</td>
+							<td class="acerto-label">%</td>
+							<td colspan="3">Direção do vento</td>
+							<td class="acerto-label">%</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="previsto">
+							<td>Previsto</td>
+							<td colspan="3">Fracos a moderados</td>
+							<td rowspan="2" class="acerto-porcentagem">
+								<input type="text">
+							</td>
+							<td colspan="3">NS - NW - S</td>
+							<td rowspan="2" class="acerto-porcentagem">
+								<input type="text">
+							</td>
+						</tr>
+						<tr class="observado">
+							<td>observado</td>
+							<td colspan="3">
+								<select class="form-control">
+									<option value="0">Chuva</option>
+									<option value="1">Sol</option>
+									<option value="2">Nublado</option>
+									<option value="3">Poucas nuvens</option>
+								</select>
+							</td>
+							<td colspan="3">
+								<input type="checkbox" value="NW">
+								<input type="checkbox" value="N">
+								<input type="checkbox" value="NE">
+								<input type="checkbox" value="E">
+								<input type="checkbox" value="SE">
+								<input type="checkbox" value="S">
+								<input type="checkbox" value="SW">
+								<input type="checkbox" value="W">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<footer>
+					<h1>Porcentagem total deste acerto <b>85%</b></h1>
+					<button type="button" class="btn btn-primary salvarAcerto">Salvar previsão</button>
+				</footer>
+
+
+			</div>
+		</div>
+	</section>
+
+	<section class="acertos-do-dia">
+		<h1>26 de Maio de 2017</h1>
+		
+		<div class="box pendente">
+			<header>
+				<h1>Norte</h1>
+				<span class="status">Acerto pendente</span>
+				<button type="button" class="btn btn-primary fazerAcerto">Fazer acerto</button>
+				<div class="resumo">
+					<a href="ajuda-preencher_acerto.html">Documentação de valores para acerto.</a>
+					<span>
+						Média qualidade
+						<b>75%</b>
+					</span>
+					<span>
+						Média acerto
+						<b>-</b>
+					</span>
+				</div>
+			</header>
+
+			<div class="content">
+				<table>
+					<thead>
+						<tr>
+							<td></td>
+							<td colspan="7">Condição do tempo</td>
+							<td class="acerto-label">%</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="previsto">
+							<td>Previsto</td>
+							<td colspan="7">Claro a parcialmente nublado passando a nublado com possibilidade de pancadas de chuva e trovoadas isoladas</td>
+							<td rowspan="2" class="acerto-porcentagem">
+								<input type="text">
+							</td>
+						</tr>
+						<tr class="observado">
+							<td>Observado</td>
+							<td colspan="7">
+								<select class="form-control">
+									<option value="0">Chuva</option>
+									<option value="1">Sol</option>
+									<option value="2">Nublado</option>
+									<option value="3">Poucas nuvens</option>
+								</select>
+							</td>
+						</tr>
+					</tbody>
+					
+					<thead>
+						<tr>
+							<td></td>
+							<td class="temp">Temp. Mín.</td>
+							<td class="acerto-label">%</td>
+							<td class="temp">Temp. Máx.</td>
+							<td class="acerto-label">%</td>
+							<td class="temp">Umid. Mín.</td>
+							<td class="acerto-label">%</td>
+							<td class="temp">Umid. Máx.</td>
+							<td class="acerto-label">%</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="previsto">
+							<td>Previsto</td>
+							<td class="temp">12º</td>
+							<td rowspan="2" class="acerto-porcentagem">
+								<input type="text">
+							</td>
+							<td class="temp">23º</td>
+							<td rowspan="2" class="acerto-porcentagem">
+								<input type="text">
+							</td>
+							<td class="temp">40%</td>
+							<td rowspan="2" class="acerto-porcentagem">
+								<input type="text">
+							</td>
+							<td class="temp">80%</td>
+							<td rowspan="2" class="acerto-porcentagem">
+								<input type="text">
+							</td>
+						</tr>
+						<tr class="observado">
+							<td>observado</td>
+							<td class="temp"><input type="text"></td>
+							<td class="temp"><input type="text"></td>
+							<td class="temp"><input type="text"></td>
+							<td class="temp"><input type="text"></td>
+						</tr>
+					</tbody>
+
+					<thead>
+						<tr>
+							<td></td>
+							<td colspan="3">Intensidade do vento</td>
+							<td class="acerto-label">%</td>
+							<td colspan="3">Direção do vento</td>
+							<td class="acerto-label">%</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="previsto">
+							<td>Previsto</td>
+							<td colspan="3">Fracos a moderados</td>
+							<td rowspan="2" class="acerto-porcentagem">
+								<input type="text">
+							</td>
+							<td colspan="3">NS - NW - S</td>
+							<td rowspan="2" class="acerto-porcentagem">
+								<input type="text">
+							</td>
+						</tr>
+						<tr class="observado">
+							<td>observado</td>
+							<td colspan="3">
+								<select class="form-control">
+									<option value="0">Chuva</option>
+									<option value="1">Sol</option>
+									<option value="2">Nublado</option>
+									<option value="3">Poucas nuvens</option>
+								</select>
+							</td>
+							<td colspan="3">
+								<input type="checkbox" value="NW">
+								<input type="checkbox" value="N">
+								<input type="checkbox" value="NE">
+								<input type="checkbox" value="E">
+								<input type="checkbox" value="SE">
+								<input type="checkbox" value="S">
+								<input type="checkbox" value="SW">
+								<input type="checkbox" value="W">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<footer>
+					<h1>Porcentagem total deste acerto <b>85%</b></h1>
+					<button type="button" class="btn btn-primary salvarAcerto">Salvar previsão</button>
+				</footer>
+
+
+			</div>
+		</div>
+		
+		<div class="box publicado">
+			<header>
+				<h1>Norte</h1>
+				<span class="status">Acerto publicado</span>
+				<button type="button" class="btn btn-primary fazerAcerto">Editar acerto</button>
+				<div class="resumo">
+					<a href="ajuda-preencher_acerto.html">Documentação de valores para acerto.</a>
+					<span>
+						Média qualidade
+						<b>75%</b>
+					</span>
+					<span>
+						Média acerto
+						<b>-</b>
+					</span>
+				</div>
+			</header>
+
+			<div class="content">
+				<table>
+					<thead>
+						<tr>
+							<td></td>
+							<td colspan="7">Condição do tempo</td>
+							<td class="acerto-label">%</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="previsto">
+							<td>Previsto</td>
+							<td colspan="7">Claro a parcialmente nublado passando a nublado com possibilidade de pancadas de chuva e trovoadas isoladas</td>
+							<td rowspan="2" class="acerto-porcentagem">
+								<input type="text">
+							</td>
+						</tr>
+						<tr class="observado">
+							<td>Observado</td>
+							<td colspan="7">
+								<select class="form-control">
+									<option value="0">Chuva</option>
+									<option value="1">Sol</option>
+									<option value="2">Nublado</option>
+									<option value="3">Poucas nuvens</option>
+								</select>
+							</td>
+						</tr>
+					</tbody>
+					
+					<thead>
+						<tr>
+							<td></td>
+							<td class="temp">Temp. Mín.</td>
+							<td class="acerto-label">%</td>
+							<td class="temp">Temp. Máx.</td>
+							<td class="acerto-label">%</td>
+							<td class="temp">Umid. Mín.</td>
+							<td class="acerto-label">%</td>
+							<td class="temp">Umid. Máx.</td>
+							<td class="acerto-label">%</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="previsto">
+							<td>Previsto</td>
+							<td class="temp">12º</td>
+							<td rowspan="2" class="acerto-porcentagem">
+								<input type="text">
+							</td>
+							<td class="temp">23º</td>
+							<td rowspan="2" class="acerto-porcentagem">
+								<input type="text">
+							</td>
+							<td class="temp">40%</td>
+							<td rowspan="2" class="acerto-porcentagem">
+								<input type="text">
+							</td>
+							<td class="temp">80%</td>
+							<td rowspan="2" class="acerto-porcentagem">
+								<input type="text">
+							</td>
+						</tr>
+						<tr class="observado">
+							<td>observado</td>
+							<td class="temp"><input type="text"></td>
+							<td class="temp"><input type="text"></td>
+							<td class="temp"><input type="text"></td>
+							<td class="temp"><input type="text"></td>
+						</tr>
+					</tbody>
+
+					<thead>
+						<tr>
+							<td></td>
+							<td colspan="3">Intensidade do vento</td>
+							<td class="acerto-label">%</td>
+							<td colspan="3">Direção do vento</td>
+							<td class="acerto-label">%</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="previsto">
+							<td>Previsto</td>
+							<td colspan="3">Fracos a moderados</td>
+							<td rowspan="2" class="acerto-porcentagem">
+								<input type="text">
+							</td>
+							<td colspan="3">NS - NW - S</td>
+							<td rowspan="2" class="acerto-porcentagem">
+								<input type="text">
+							</td>
+						</tr>
+						<tr class="observado">
+							<td>observado</td>
+							<td colspan="3">
+								<select class="form-control">
+									<option value="0">Chuva</option>
+									<option value="1">Sol</option>
+									<option value="2">Nublado</option>
+									<option value="3">Poucas nuvens</option>
+								</select>
+							</td>
+							<td colspan="3">
+								<input type="checkbox" value="NW">
+								<input type="checkbox" value="N">
+								<input type="checkbox" value="NE">
+								<input type="checkbox" value="E">
+								<input type="checkbox" value="SE">
+								<input type="checkbox" value="S">
+								<input type="checkbox" value="SW">
+								<input type="checkbox" value="W">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<footer>
+					<h1>Porcentagem total deste acerto <b>85%</b></h1>
+					<button type="button" class="btn btn-primary salvarAcerto">Salvar previsão</button>
+				</footer>
+
+
+			</div>
+		</div>
+	</section>
+
+	<section class="acertos-do-dia">
+		<h1>26 de Maio de 2017</h1>
+		
+		<div class="box pendente">
+			<header>
+				<h1>Norte</h1>
+				<span class="status">Acerto pendente</span>
+				<button type="button" class="btn btn-primary fazerAcerto">Fazer acerto</button>
+				<div class="resumo">
+					<a href="ajuda-preencher_acerto.html">Documentação de valores para acerto.</a>
+					<span>
+						Média qualidade
+						<b>75%</b>
+					</span>
+					<span>
+						Média acerto
+						<b>-</b>
+					</span>
+				</div>
+			</header>
+
+			<div class="content">
+				<table>
+					<thead>
+						<tr>
+							<td></td>
+							<td colspan="7">Condição do tempo</td>
+							<td class="acerto-label">%</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="previsto">
+							<td>Previsto</td>
+							<td colspan="7">Claro a parcialmente nublado passando a nublado com possibilidade de pancadas de chuva e trovoadas isoladas</td>
+							<td rowspan="2" class="acerto-porcentagem">
+								<input type="text">
+							</td>
+						</tr>
+						<tr class="observado">
+							<td>Observado</td>
+							<td colspan="7">
+								<select class="form-control">
+									<option value="0">Chuva</option>
+									<option value="1">Sol</option>
+									<option value="2">Nublado</option>
+									<option value="3">Poucas nuvens</option>
+								</select>
+							</td>
+						</tr>
+					</tbody>
+					
+					<thead>
+						<tr>
+							<td></td>
+							<td class="temp">Temp. Mín.</td>
+							<td class="acerto-label">%</td>
+							<td class="temp">Temp. Máx.</td>
+							<td class="acerto-label">%</td>
+							<td class="temp">Umid. Mín.</td>
+							<td class="acerto-label">%</td>
+							<td class="temp">Umid. Máx.</td>
+							<td class="acerto-label">%</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="previsto">
+							<td>Previsto</td>
+							<td class="temp">12º</td>
+							<td rowspan="2" class="acerto-porcentagem">
+								<input type="text">
+							</td>
+							<td class="temp">23º</td>
+							<td rowspan="2" class="acerto-porcentagem">
+								<input type="text">
+							</td>
+							<td class="temp">40%</td>
+							<td rowspan="2" class="acerto-porcentagem">
+								<input type="text">
+							</td>
+							<td class="temp">80%</td>
+							<td rowspan="2" class="acerto-porcentagem">
+								<input type="text">
+							</td>
+						</tr>
+						<tr class="observado">
+							<td>observado</td>
+							<td class="temp"><input type="text"></td>
+							<td class="temp"><input type="text"></td>
+							<td class="temp"><input type="text"></td>
+							<td class="temp"><input type="text"></td>
+						</tr>
+					</tbody>
+
+					<thead>
+						<tr>
+							<td></td>
+							<td colspan="3">Intensidade do vento</td>
+							<td class="acerto-label">%</td>
+							<td colspan="3">Direção do vento</td>
+							<td class="acerto-label">%</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="previsto">
+							<td>Previsto</td>
+							<td colspan="3">Fracos a moderados</td>
+							<td rowspan="2" class="acerto-porcentagem">
+								<input type="text">
+							</td>
+							<td colspan="3">NS - NW - S</td>
+							<td rowspan="2" class="acerto-porcentagem">
+								<input type="text">
+							</td>
+						</tr>
+						<tr class="observado">
+							<td>observado</td>
+							<td colspan="3">
+								<select class="form-control">
+									<option value="0">Chuva</option>
+									<option value="1">Sol</option>
+									<option value="2">Nublado</option>
+									<option value="3">Poucas nuvens</option>
+								</select>
+							</td>
+							<td colspan="3">
+								<input type="checkbox" value="NW">
+								<input type="checkbox" value="N">
+								<input type="checkbox" value="NE">
+								<input type="checkbox" value="E">
+								<input type="checkbox" value="SE">
+								<input type="checkbox" value="S">
+								<input type="checkbox" value="SW">
+								<input type="checkbox" value="W">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<footer>
+					<h1>Porcentagem total deste acerto <b>85%</b></h1>
+					<button type="button" class="btn btn-primary salvarAcerto">Salvar previsão</button>
+				</footer>
+			</div>
+		</div>
+		
+		<div class="box publicado">
+			<header>
+				<h1>Norte</h1>
+				<span class="status">Acerto publicado</span>
+				<button type="button" class="btn btn-primary fazerAcerto">Editar acerto</button>
+				<div class="resumo">
+					<a href="ajuda-preencher_acerto.html">Documentação de valores para acerto.</a>
+					<span>
+						Média qualidade
+						<b>75%</b>
+					</span>
+					<span>
+						Média acerto
+						<b>-</b>
+					</span>
+				</div>
+			</header>
+
+			<div class="content">
+				<table>
+					<thead>
+						<tr>
+							<td></td>
+							<td colspan="7">Condição do tempo</td>
+							<td class="acerto-label">%</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="previsto">
+							<td>Previsto</td>
+							<td colspan="7">Claro a parcialmente nublado passando a nublado com possibilidade de pancadas de chuva e trovoadas isoladas</td>
+							<td rowspan="2" class="acerto-porcentagem">
+								<input type="text">
+							</td>
+						</tr>
+						<tr class="observado">
+							<td>Observado</td>
+							<td colspan="7">
+								<select class="form-control">
+									<option value="0">Chuva</option>
+									<option value="1">Sol</option>
+									<option value="2">Nublado</option>
+									<option value="3">Poucas nuvens</option>
+								</select>
+							</td>
+						</tr>
+					</tbody>
+					
+					<thead>
+						<tr>
+							<td></td>
+							<td class="temp">Temp. Mín.</td>
+							<td class="acerto-label">%</td>
+							<td class="temp">Temp. Máx.</td>
+							<td class="acerto-label">%</td>
+							<td class="temp">Umid. Mín.</td>
+							<td class="acerto-label">%</td>
+							<td class="temp">Umid. Máx.</td>
+							<td class="acerto-label">%</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="previsto">
+							<td>Previsto</td>
+							<td class="temp">12º</td>
+							<td rowspan="2" class="acerto-porcentagem">
+								<input type="text">
+							</td>
+							<td class="temp">23º</td>
+							<td rowspan="2" class="acerto-porcentagem">
+								<input type="text">
+							</td>
+							<td class="temp">40%</td>
+							<td rowspan="2" class="acerto-porcentagem">
+								<input type="text">
+							</td>
+							<td class="temp">80%</td>
+							<td rowspan="2" class="acerto-porcentagem">
+								<input type="text">
+							</td>
+						</tr>
+						<tr class="observado">
+							<td>observado</td>
+							<td class="temp"><input type="text"></td>
+							<td class="temp"><input type="text"></td>
+							<td class="temp"><input type="text"></td>
+							<td class="temp"><input type="text"></td>
+						</tr>
+					</tbody>
+
+					<thead>
+						<tr>
+							<td></td>
+							<td colspan="3">Intensidade do vento</td>
+							<td class="acerto-label">%</td>
+							<td colspan="3">Direção do vento</td>
+							<td class="acerto-label">%</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="previsto">
+							<td>Previsto</td>
+							<td colspan="3">Fracos a moderados</td>
+							<td rowspan="2" class="acerto-porcentagem">
+								<input type="text">
+							</td>
+							<td colspan="3">NS - NW - S</td>
+							<td rowspan="2" class="acerto-porcentagem">
+								<input type="text">
+							</td>
+						</tr>
+						<tr class="observado">
+							<td>observado</td>
+							<td colspan="3">
+								<select class="form-control">
+									<option value="0">Chuva</option>
+									<option value="1">Sol</option>
+									<option value="2">Nublado</option>
+									<option value="3">Poucas nuvens</option>
+								</select>
+							</td>
+							<td colspan="3">
+								<input type="checkbox" value="NW">
+								<input type="checkbox" value="N">
+								<input type="checkbox" value="NE">
+								<input type="checkbox" value="E">
+								<input type="checkbox" value="SE">
+								<input type="checkbox" value="S">
+								<input type="checkbox" value="SW">
+								<input type="checkbox" value="W">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<footer>
+					<h1>Porcentagem total deste acerto <b>85%</b></h1>
+					<button type="button" class="btn btn-primary salvarAcerto">Salvar previsão</button>
+				</footer>
+
+
+			</div>
+		</div>
+	</section>
+
+
+</section>
+
+<!-- Js -->
+<script src="js/jquery.min.js"></script>
+<script src="js/flat-ui-pro.min.js"></script>
+<script src="js/radiocheck.js"></script>
+<script src="js/fileinput.js"></script>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/prevmet.js"></script>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+</body>
+
+</html>
